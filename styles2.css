@@ -1,0 +1,163 @@
+#about {
+    width: 100%;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-con {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+#about h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    background-color: transparent;
+}
+
+.about-des {
+    margin-bottom: 60px;
+}
+
+.about-des p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    background-color: transparent;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 60px;
+    padding: 60px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.stat-item h2 {
+    color: #00FF88;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    background-color: transparent;
+    line-height: 1;
+}
+
+.stat-item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    background-color: transparent;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+    #about {
+        padding: 60px 20px;
+    }
+
+    .about-con {
+        max-width: 100%;
+    }
+
+    #about h1 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .about-des {
+        margin-bottom: 40px;
+    }
+
+    .about-des p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+        padding: 0 10px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px 30px;
+        padding: 40px 0;
+    }
+
+    .stat-item h2 {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    .stat-item p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    #about {
+        padding: 70px 30px;
+    }
+
+    .about-con {
+        max-width: 900px;
+    }
+
+    #about h1 {
+        font-size: 40px;
+        margin-bottom: 28px;
+    }
+
+    .about-des {
+        margin-bottom: 50px;
+    }
+
+    .about-des p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 14px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px 40px;
+        padding: 50px 0;
+    }
+
+    .stat-item h2 {
+        font-size: 48px;
+        margin-bottom: 14px;
+    }
+
+    .stat-item p {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 993px) {
+    #about {
+        padding: 20px 40px;
+    }
+    .about-con {
+        max-width: 1200px;
+    }
+}
