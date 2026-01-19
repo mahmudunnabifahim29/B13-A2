@@ -1,0 +1,114 @@
+footer {
+    width: 100%;
+    background: url(assets/footer-bg.png) center/cover no-repeat;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A0B2E;
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.footer-logo {
+    margin-bottom: 32px;
+    background-color: transparent;
+}
+
+.footer-logo h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    margin: 0;
+}
+
+.footer-logo .wave {
+    background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 32px;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: white;
+}
+
+.footer-social i {
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.footer-copyright {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 60px 20px;
+    }
+    .footer-logo h1 {
+        font-size: 48px;
+    }
+    .footer-social {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 16px;
+        max-width: 400px;
+        margin: 32px auto;
+    }
+    .footer-social a {
+        font-size: 14px;
+        justify-content: center;
+    }
+    .footer-social i {
+        font-size: 18px;
+    }
+    .footer-copyright {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    footer {
+        padding: 70px 30px;
+    }
+    .footer-logo h1 {
+        font-size: 56px;
+    }
+    .footer-social {
+        gap: 30px;
+    }
+}
