@@ -1,0 +1,344 @@
+#feature {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 40px 80px;
+    background-color: #1A0B2E;
+}
+
+#feature h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: transparent;
+}
+
+.episodes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.episode-card {
+    background: #351165;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+    transform: translateY(-8px);
+}
+
+.episode-link {
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.episode-image {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-color: #230E3D;
+}
+
+.episode-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.episode-image iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #FB09B4, #F7E93F);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button i {
+    color: white;
+    font-size: 24px;
+    margin-left: 4px;
+    background-color: transparent;
+}
+
+.episode-content {
+    padding: 24px;
+    background-color: transparent;
+}
+
+.episode-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+    background-color: transparent;
+    line-height: 1.3;
+}
+
+.episode-content p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    background-color: transparent;
+}
+
+.episode-duration {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+}
+
+.episode-duration i {
+    color: #00FF88;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.episode-duration span {
+    color: #00FF88;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+#host {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+    background-color: #1A0B2E;
+}
+
+#host h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: transparent;
+}
+
+.host-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #351165;
+    border-radius: 40px;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 60px;
+}
+
+.host-image {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+.host-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.host-content {
+    background-color: transparent;
+}
+
+.host-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+    background-color: transparent;
+}
+
+.host-content p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    margin-bottom: 32px;
+    background-color: transparent;
+}
+
+.host-social {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+.host-social a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.host-social a:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.host-social a img {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    object-fit: contain;
+}
+
+.host-social i {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+    #feature {
+        padding: 60px 20px 40px;
+    }
+
+    #feature h1 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .episodes-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .episode-image {
+        height: 180px;
+    }
+
+    .episode-content {
+        padding: 20px;
+    }
+
+    .episode-content h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .episode-content p {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    #host {
+        padding: 40px 20px 60px;
+    }
+
+    #host h1 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .host-container {
+        padding: 32px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        border-radius: 24px;
+    }
+
+    .host-image {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 0;
+    }
+
+    .host-content h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .host-content p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .host-social {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .host-social a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .host-social a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .host-social i {
+        font-size: 16px;
+    }
+
+    .play-button {
+        width: 56px;
+        height: 56px;
+    }
+
+    .play-button i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    #feature {
+        padding: 120px 40px 80px;
+    }
+
+    #host {
+        padding: 80px 40px 120px;
+    }
+}
